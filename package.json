@@ -1,0 +1,14 @@
+{
+  "name": "wonblog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "test": "node --test tests/*.test.js"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
+  }
+}

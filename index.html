@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wonblog — fikirleri, ürünleri ve dijital dünyayı keşfet." />
+  <meta name="theme-color" content="#f8f8fb" />
+  <title>Wonblog — Dijital notlar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">İçeriğe geç</a>
+  <header class="site-header"><div class="nav shell">
+    <a class="brand" href="#top" aria-label="Wonblog ana sayfa">won<span>blog</span><i></i></a>
+    <nav id="main-nav" aria-label="Ana menü"><a href="#yazilar">Yazılar</a><a href="#bulten">Bülten</a><a href="#hakkinda">Hakkında</a></nav>
+    <div class="nav-actions"><button class="icon-button theme-toggle" aria-label="Koyu temaya geç" title="Temayı değiştir"><span>◐</span></button><button class="menu-button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button></div>
+  </div></header>
+  <main id="content">
+    <section class="hero shell" id="top"><p class="eyebrow">01 — MERHABA, BEN WON.</p><div class="hero-grid"><div><h1>Merakla başlayan<br><em>iyi hikâyeler.</em></h1><p class="intro">Ürün, tasarım ve dijital kültür üzerine net fikirler. Gürültüyü eleyip gerçekten önemli olanı konuşuyoruz.</p><a class="button" href="#yazilar">Yazıları keşfet <b>↘</b></a></div><aside class="now-card"><span class="live-dot"></span><p>Şu an okunuyor</p><strong>Yapay zekâ çağında<br>insan kalmak</strong><small>8 dk okuma · 24 Haz 2024</small><a href="#makale-yapay-zeka" aria-label="Yapay zekâ yazısına git">→</a></aside></div><div class="hero-art" aria-hidden="true"><span></span><span></span><span></span></div></section>
+    <section class="articles shell" id="yazilar"><div class="section-head"><div><p class="eyebrow">02 — YENİ YAZILAR</p><h2>Düşünmek için<br>biraz alan.</h2></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Yazılarda ara" aria-label="Yazılarda ara" /></label></div>
+      <div class="filters" role="group" aria-label="Kategori filtresi"><button class="filter active" data-filter="all">Tümü <span>06</span></button><button class="filter" data-filter="Ürün">Ürün</button><button class="filter" data-filter="Tasarım">Tasarım</button><button class="filter" data-filter="Kültür">Kültür</button><button class="filter" data-filter="Teknoloji">Teknoloji</button></div>
+      <div class="article-grid" id="article-grid"></div><p class="empty-state" hidden>Aramana uygun bir yazı bulamadık. Başka bir kelime dene.</p>
+    </section>
+    <section class="newsletter" id="bulten"><div class="shell newsletter-inner"><div><p class="eyebrow">03 — HAFTALIK NOTLAR</p><h2>Gelen kutunda<br>biraz iyi fikir.</h2></div><form id="subscribe-form" novalidate><label for="email">E-posta adresin</label><div><input id="email" type="email" placeholder="sen@ornek.com" required /><button class="button" type="submit">Katıl <b>↗</b></button></div><p class="form-message" aria-live="polite"></p><small>Spam yok. İstediğin zaman tek tıkla ayrılabilirsin.</small></form></div></section>
+    <section class="about shell" id="hakkinda"><p class="eyebrow">04 — HAKKINDA</p><div><h2>İnternet daha<br>insani olabilir.</h2><p>Wonblog, teknolojiye insan tarafından bakmak için hazırlanmış bağımsız bir yayın. Hız yerine derinliği, gösteriş yerine faydayı seçiyoruz.</p><a class="text-link" href="mailto:merhaba@wonblog.com">Bir merhaba bırak <span>→</span></a></div></section>
+  </main>
+  <footer class="shell"><a class="brand" href="#top">won<span>blog</span><i></i></a><p>© <span id="year"></span> Wonblog. Merakla yapıldı.</p><div><a href="#top">Yukarı çık ↑</a><a href="mailto:merhaba@wonblog.com">İletişim</a></div></footer>
+  <template id="article-template"><article class="article-card"><a class="card-image" href="#" aria-label="Yazıyı oku"><span class="card-mark"></span></a><div class="card-meta"><span class="category"></span><span class="read-time"></span></div><h3><a href="#"></a></h3><p class="excerpt"></p><div class="card-foot"><span class="date"></span><button class="share" type="button" aria-label="Bağlantıyı kopyala">↗</button></div></article></template>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
